@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <!-- Styles CSS -->
     <link rel="stylesheet" href="styles.css">
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -37,12 +38,15 @@
                                 class="material-symbols-outlined">
                                 pets
                             </span> for adoption</a>
+
                     </div>
+
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                     <div class="collapse navbar-collapse " id="navbarScroll">
                         <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
                             style="--bs-scroll-height: 100px;">
@@ -70,13 +74,16 @@
                     </div>
                 </div>
             </nav>
+
             <!-- header section -->
             <div class=" jumbotron header">
+
                 <div class="header-sub">
                     <h1 class="display-5 fw-bold"><span class="material-symbols-outlined">
                             pets
                         </span> For Adoption: The Pet People</h1>
                     <p class="header-para">Book Pet Care Service Appointments At Home</p>
+
                 </div>
                 <!--Card -->
                 <div id="link-cards">
@@ -93,7 +100,7 @@
                         <div class="card-container-img-sub ">
                             <img src="https://img.icons8.com/color/48/000000/man-with-dog.png" />
                         </div>
-                        <div class="card-container-content">
+                        <div class="card-container-content ">
                             <p class="card-content">Dog Training</p>
                             <p class="card-content-sub">Dog-friendly, one-on-one dog training At Home</p>
 
@@ -145,6 +152,12 @@
     </header>
     <!-- Service section -->
     <main>
+        <div class="dark_mode">
+            Are your Eyes hurting, Change to Dark Mode.
+        </div>
+        <div class="dark_mode_btn ">
+            <button class="btn btn-dark">Dark mode</button>
+        </div>
         <div id="service">
             <div class="service-heading">
                 <h1 class="display-5 fw-bold heading">Services for every Pet</h1>
@@ -152,14 +165,14 @@
             <div class="service-provided">
                 <div class="service-info">
                     <!-- card 1 -->
-                    <div class="card mb-3 border-0">
+                    <div class="card mb-3 border-0 ">
                         <div class="row g-0">
                             <div class="col-md-2">
                                 <img src="https://img.icons8.com/color/96/000000/surgical-scissors.png"
                                     class="img-fluid rounded-start service-img" alt="grooming">
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
+                            <div class="col-md-8 ">
+                                <div class="card-body ">
                                     <h5 class="card-title">Pet Grooming</h5>
                                     <p class="card-text">Book In-Home Grooming Session</p>
                                     <a href="">Find out more about Pet Grooming ></a>
@@ -168,7 +181,7 @@
                         </div>
                     </div>
                     <!-- card 2 -->
-                    <div class="card mb-3 border-0">
+                    <div class="card mb-3 border-0 ">
                         <div class="row g-0">
                             <div class="col-md-2">
                                 <img src="https://img.icons8.com/color/96/000000/dog-park.png"
@@ -234,8 +247,8 @@
             </div>
         </div>
         <!-- info section -->
-        <div id="information">
-            <div class="p-5 mb-4 bg-light">
+        <div id="information bg-light">
+            <div class="p-5 mb-4  information_section">
                 <div class="information-heading">
                     <h1 class="display-5 fw-bold">How it works?</h1>
                     <p class="service-booking-card-text">Charges may vary based on Pet and City.</p>
@@ -313,11 +326,13 @@
             <div class="review-content">
                 <div class="container">
                     <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
-                        <li>
+                        <li class="reviews">
                             <img src="img/martha.jpg" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"
                                 data-editor="field"
                                 data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
-                            <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Martha Stewart</h5>
+                            <h5 class="font-cond mgb-5 fg-text-d fs-130 font-dark" contenteditable="false">
+                                Martha
+                                Stewart</h5>
                             <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Business
                                 Woman -
                                 New York</small>
@@ -328,13 +343,14 @@
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                             </div>
-                            <p class="fs-110 font-cond-l" contenteditable="false">" Great services! The pets really seem
+                            <p class="fs-110 font-cond-l font-cond" contenteditable="false">" Great services! The pets
+                                really seem
                                 to
                                 enjoy their time out here. Highly recommend it to all of you out there looking for good
                                 grooming services for your pets. "</p>
 
                         </li>
-                        <li>
+                        <li class="reviews">
                             <img src="img/jason.jpg" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"
                                 data-editor="field"
                                 data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
@@ -349,14 +365,15 @@
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                             </div>
-                            <p class="fs-110 font-cond-l" contenteditable="false">" I absolutely loved the way these
+                            <p class="fs-110 font-cond-l font-cond" contenteditable="false">" I absolutely loved the way
+                                these
                                 guys
                                 were with my lad, there wasn't even a hint of discomfort. They were really good at their
                                 jobs, friendly and professional.
                                 "</p>
 
                         </li>
-                        <li>
+                        <li class="reviews">
                             <img src="img/sean.jpg" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false"
                                 data-editor="field"
                                 data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
@@ -371,7 +388,8 @@
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                             </div>
-                            <p class="fs-110 font-cond-l" contenteditable="false">" They give the best pet grooming
+                            <p class="fs-110 font-cond-l font-cond" contenteditable="false">" They give the best pet
+                                grooming
                                 services
                                 in noida! my baby casper had an amazing time with the groomer ! he enjoyed the whole
                                 session
@@ -391,8 +409,8 @@
                 allowfullscreen></iframe>
         </div>
         <!-- Service Partners -->
-        <div id="service-partners">
-            <div class="p-4 mb-4 bg-light">
+        <div id="service-partners bg-light">
+            <div class="p-4 mb-4 ">
                 <div class="service-partners-title">
                     <h1 class="display-5 fw-bold">Meet a few of our Pet care Heroes</h1>
                 </div>
@@ -543,7 +561,10 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
+
     </main>
     <!-- Footer Section -->
     <footer>
