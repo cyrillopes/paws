@@ -819,7 +819,7 @@ ul {
   background-size: 100%;
   padding: 6rem;
   border-radius: 5px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.3);
   z-index: 100;
 }
 
