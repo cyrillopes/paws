@@ -25,3 +25,9 @@ darkMode.addEventListener("click", () => {
   shopInfo.classList.toggle("allDark");
   item_collection.forEach((e) => e.classList.toggle("card_Color"));
 });
+
+// // const closeCoupon = function () {
+// //   document.querySelector(".coupon").style.visibility = "hidden";
+// // };
+
+// // overlay.addEventListener("click", closeModal);
