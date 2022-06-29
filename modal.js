@@ -2,6 +2,7 @@ const modal = document.querySelector(".modalCoupon");
 const overlay = document.querySelector(".overlay");
 const btnModalClose = document.querySelector(".close-modal2");
 const navbar = document.querySelector(".navbar");
+
 const modelCoupon = setTimeout(function () {
   modal.classList.remove("hidden2");
   overlay.classList.remove("hidden2");
@@ -15,5 +16,4 @@ const closeModal = function () {
 
 btnModalClose.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
-
 modelCoupon();
