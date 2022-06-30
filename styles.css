@@ -1,12 +1,11 @@
 /* <!-- Nav bar --> */
 .icon {
-  
   height: 70px;
   width: 70px;
 }
 .temp {
   font-size: 1rem;
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
 .nav-bar {
