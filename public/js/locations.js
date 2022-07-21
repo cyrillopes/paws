@@ -1,4 +1,4 @@
-const locationUrl = "https://api.npoint.io/a66723bb366d82c47202";
+const locationUrl = "https://paws-for-adoption.herokuapp.com/location";
 const locationEl = document.querySelector(".search_location");
 const districts = document.querySelector(".search_district");
 
