@@ -5,6 +5,9 @@ http://localhost:3000/location
 ////////////////////////
 list of quick search
 ///////////////////////
+category
+http://localhost:3000/category
+///////////////////////
 list of toys
 http://localhost:3000/shop/2
 list of accessories
@@ -51,6 +54,14 @@ Details of the Gift
 http://localhost:3000/details/1/3
 Details of the accessories
 http://localhost:3000/details/3/3
-///////////////////// -->
+/////////////////////
+Breed of animals
+http://localhost:3000/breed
+Breed of animals based on breed id
+http://localhost:3000/breed?breed_id=2
+-->
 
-<!-- Adoption page -->
+<!-- Adoption page
+List of animals for adoption
+http://localhost:3000/adoption
+-->

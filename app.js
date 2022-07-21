@@ -4,7 +4,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 // const cors = require("cors");
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 3001;
 const mongoDB = require("mongodb");
 const mongoClient = mongoDB.MongoClient;
 const mongoUrl = process.env.MONGOURL;
@@ -24,6 +24,15 @@ app.get("/", function (req, res) {
 
 app.get("/location", (req, res) => {
   db.collection("location")
+    .find()
+    .toArray((err, result) => {
+      if (err) throw err;
+      res.send(result);
+    });
+});
+
+app.get("/category", (req, res) => {
+  db.collection("category")
     .find()
     .toArray((err, result) => {
       if (err) throw err;
@@ -86,6 +95,34 @@ app.get("/details/:category_id/:id", (req, res) => {
       res.send(result);
     });
 });
+
+app.get("/breed", (req, res) => {
+  let query = {};
+  let breedId = Number(req.query.breed_id);
+  if (breedId) {
+    query = {
+      breed_id: cat,
+    };
+  }
+  db.collection("breed")
+    .find(query)
+    .toArray((err, result) => {
+      if (err) throw err;
+      res.send(result);
+    });
+});
+
+app.get("/adoption/:breed_id", (req, res) => {
+  let query = {};
+  let breedId = Number(req.params.breed_id);
+  db.collection("adoption")
+    .find({ breed_id: breedId })
+    .toArray((err, result) => {
+      if (err) throw err;
+      res.send(result);
+    });
+});
+
 mongoClient.connect(mongoUrl, (err, client) => {
   if (err) console.log(err);
   db = client.db("paws");
