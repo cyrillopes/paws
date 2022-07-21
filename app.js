@@ -126,7 +126,7 @@ app.get("/adoption/:breed_id", (req, res) => {
 mongoClient.connect(mongoUrl, (err, client) => {
   if (err) console.log(err);
   db = client.db("paws");
-  app.listen(3000, () => {
+  app.listen(port, () => {
     console.log("Listening on port 3001");
   });
 });
