@@ -22,6 +22,11 @@ app.get("/", function (req, res) {
   // res.send("hello");
 });
 
+app.get("/shopping", function (req, res) {
+  res.sendFile(__dirname + "/shop.html");
+  // res.send("hello");
+});
+
 app.get("/location", (req, res) => {
   db.collection("location")
     .find()
@@ -34,6 +39,16 @@ app.get("/location", (req, res) => {
 app.get("/category", (req, res) => {
   db.collection("category")
     .find()
+    .toArray((err, result) => {
+      if (err) throw err;
+      res.send(result);
+    });
+});
+
+app.get("/quick-search/:category_id", (req, res) => {
+  let categoryId = Number(req.params.category_id);
+  db.collection("quickSearch")
+    .find({ category_id: categoryId })
     .toArray((err, result) => {
       if (err) throw err;
       res.send(result);
