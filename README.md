@@ -14,6 +14,10 @@
 
 # https://paws-for-adoption.herokuapp.com/quick-search/1
 
+# # quick search based on category id
+
+# https://paws-for-adoption.herokuapp.com/quick-search/1
+
 # ///////////////////////
 
 # category
