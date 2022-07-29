@@ -1,0 +1,84 @@
+.nav-bar {
+  height: 55rem;
+  width: 100%;
+  background-image: url("https://i.ibb.co/30vkgPd/pexels-tima-miroshnichenko-5390060.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.vet-form {
+  margin: 2% 55% 0 5%;
+  width: 40%;
+  border: 1px;
+  background-color: #fff;
+  color: rgb(71, 70, 70);
+}
+.vet-form-para {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 8%;
+}
+.vet-form_label {
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 0%;
+}
+textarea {
+  margin-bottom: 4%;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.vet-form_submit {
+  background-color: #ff7716;
+  border: #ff7716;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 20px;
+  border-radius: 0;
+  width: 80%;
+}
+.vet-form_submit:hover {
+  background-color: #fc8835;
+  color: #fff;
+}
+
+#vet-service {
+  color: rgb(71, 70, 70);
+}
+.vet-service-img-fluid {
+  height: 450px;
+  width: auto;
+  margin-left: 15%;
+}
+.vet-services-description {
+  background-color: #fff4d9;
+}
+.vet-service-card {
+  margin-left: 2%;
+}
+
+.vet-service-img-description {
+  height: 400px;
+  width: auto;
+  margin-left: 10%;
+}
+.vet-service-cost {
+  margin: 2% 17% auto;
+  background-color: #f0f6ff;
+}
+.vet-service-price {
+  font-weight: 900;
+}
+.hr {
+  height: 30px;
+  width: auto;
+  font-size: 1rem;
+  background-color: #fff;
+}
+.vet-service-info-para {
+  font-size: 2rem;
+}

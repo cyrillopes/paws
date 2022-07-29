@@ -313,14 +313,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .testimony-content {
   position: absolute;
   margin: 3% auto auto 15%;
-  border: 1px solid rgb(216, 216, 216);
-  border-radius: 5px;
+  border: 0.063rem solid rgb(216, 216, 216);
+  border-radius: 0.313rem;
   width: 30%;
-  height: 275px;
+  height: 17.188rem;
   background-color: white;
 }
 .testimony-content-box {
   color: rgb(71, 70, 70);
+  /* font-size: 1.5rem; */
   font-weight: bold;
   margin: 5%;
 }

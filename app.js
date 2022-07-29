@@ -128,7 +128,6 @@ app.get("/breed", (req, res) => {
 });
 
 app.get("/adoption/:breed_id", (req, res) => {
-  let query = {};
   let breedId = Number(req.params.breed_id);
   db.collection("adoption")
     .find({ breed_id: breedId })
@@ -136,6 +135,55 @@ app.get("/adoption/:breed_id", (req, res) => {
       if (err) throw err;
       res.send(result);
     });
+});
+
+app.get("/pawOrders", (req, res) => {
+  let email = req.query.email;
+  let query = {};
+  if (email) {
+    query = { email };
+  }
+  db.collection("pawsOrders")
+    .find(query)
+    .toArray((err, result) => {
+      if (err) throw err;
+      res.send(result);
+    });
+});
+
+app.post("/placeOrder", (req, res) => {
+  db.collection("pawsOrders").insert(req.body, (err, result) => {
+    if (err) throw err;
+    res.send("Order Place Hooman");
+  });
+});
+
+app.put("/updateOrder", (req, res) => {
+  let orderId = Number(req.params.orderId);
+  db.collection("pawsOrders").updateOne(
+    {
+      orderId: orderId,
+    },
+    {
+      $set: {
+        status: req.body.status,
+        bank_name: req.body.bank_name,
+        date: req.body.date,
+      },
+    },
+    (err, result) => {
+      if (err) throw err;
+      res.send("Order Updated");
+    }
+  );
+});
+
+app.delete("/deleteOrder/:id", (req, res) => {
+  let _id = mongo.ObjectId(res.params.id);
+  db.collection("pawsOrders").remove({ _id }, (err, result) => {
+    if (err) throw err;
+    res.send("Order deleted successfully");
+  });
 });
 
 mongoClient.connect(mongoUrl, (err, client) => {
