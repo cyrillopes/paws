@@ -137,7 +137,19 @@ app.get("/adoption/:breed_id", (req, res) => {
     });
 });
 
-app.get("/pawOrders", (req, res) => {
+app.get("/pawItem", (req, res) => {
+  let id = req.body.id;
+  if (Array.isArray(id)) {
+    db.collection("shop")
+      .find({ id: { $in: id } })
+      .toArray((err, result) => {
+        if (err) throw err;
+        res.send("Invalid Input");
+      });
+  }
+});
+
+app.get("/pawsOrders", (req, res) => {
   let email = req.query.email;
   let query = {};
   if (email) {
@@ -152,13 +164,13 @@ app.get("/pawOrders", (req, res) => {
 });
 
 app.post("/placeOrder", (req, res) => {
-  db.collection("pawsOrders").insert(req.body, (err, result) => {
+  db.collection("pawsOrders").insertOne(req.body, (err, result) => {
     if (err) throw err;
     res.send("Order Place Hooman");
   });
 });
 
-app.put("/updateOrder", (req, res) => {
+app.put("/updateOrder/:orderId", (req, res) => {
   let orderId = Number(req.params.orderId);
   db.collection("pawsOrders").updateOne(
     {

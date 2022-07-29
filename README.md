@@ -134,4 +134,53 @@
 
 # https://paws-for-adoption.herokuapp.com/adoption
 
+# list of items
+
 # List of orders
+
+# https://paws-for-adoption.herokuapp.com/pawsOrders
+
+# List of orders based on email
+
+# https://paws-for-adoption.herokuapp.com/pawsOrders?email=amit@gmail.com
+
+# Place order
+
+# https://paws-for-adoption.herokuapp.com/placeOrder
+
+<!-- {
+  "_id": {
+    "$oid": "62e44fb1cda4c8e7d7e286b3"
+  },
+  "orderId": 2,
+  "name": "Cyril",
+  "email": "cyril@gmail.com",
+  "address": "Home 16",
+  "phone": {
+    "$numberLong": "9988998877"
+  },
+  "cost": 29999,
+  "itemId": [
+    1,
+    7,
+    23
+  ],
+  "bank_name": "SBI",
+  "date": "10/07/2023",
+  "status": "TXN_SUCCESS"
+} -->
+
+# update existing order
+
+# https://paws-for-adoption.herokuapp.com/updateOrder/2
+
+<!-- {
+
+"bank_name": "HDFC",
+"date": "10/07/2022",
+"status": "TXN_SUCCESS"
+} -->
+
+# Delete order
+
+# https://paws-for-adoption.herokuapp.com//deleteOrder/1
