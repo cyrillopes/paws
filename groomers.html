@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🐾 World</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- Styles CSS -->
+    <!-- <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/training.css">
+    <link rel="stylesheet" href="public/css/vet.css">
+    <link rel="stylesheet" href="public/css/groomers.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/training.css">
+    <link rel="stylesheet" href="css/vet.css">
+    <link rel="stylesheet" href="css/groomers.css">
+    <script defer src="js/api.js"></script>
+</head>
+
+<body class="body_dark">
+
+    <header>
+        <!-- Nav bar -->
+        <div class="nav-bar ">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <div class="logo-container">
+                        <a class="navbar-brand navbar-heading" href="/"><span class="material-symbols-outlined">
+                                pets
+                            </span> for adoption</a>
+
+                    </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img class="icon"></img>
+                    <p class="temp"></p>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse " id="navbarScroll">
+                        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-items nav-item">
+                                <a class="nav-link font-color" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-items nav-item">
+                                <a class="nav-link font-color" aria-current="page" href="/grooming">Grooming</a>
+                            </li>
+                            <li class="nav-items nav-item">
+                                <a class="nav-link font-color" aria-current="page" href="/training">Training</a>
+                            </li>
+                            <li class="nav-items nav-item">
+                                <a class="nav-link font-color" aria-current="page" href="/vet">Online Vet</a>
+                            </li>
+                            <li class="nav-items nav-item">
+                                <a class="nav-link font-color" aria-current="page" href="/adoption">Adoption</a>
+                            </li>
+                            <li class="nav-items nav-item">
+                                <a class="nav-link font-color" aria-current="page" href="/shopping">Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- header section -->
+            <div class=" jumbotron header">
+
+                <div class="header-sub py-lg-4 text-center">
+                    <h3 class="display-5 fw-bold py-lg-4 mt-3 text-secondary px-lg-0">Pet Grooming service that
+                        comes
+                        to
+                        your
+                        home</h3>
+                    <h1 class="display-6 m-0">Instantly Book a Professional Pet Groomer Online,
+                        Whenever you
+                        need
+                        one.</h1>
+                    <button type="button" class="btn btn-lg training-btn m-lg-5 ">Book a Professional Groomer
+                    </button>
+                </div>
+            </div>
+    </header>
+    <!-- Service section -->
+    <main>
+        <section id="grooming-info">
+            <h2 class="fw-bold display-5 text-center py-lg-5 text-secondary">How Pet Grooming works at your home?
+            </h2>
+            <div class="row container-fluid py-lg-4">
+                <div class="col-lg-7">
+                    <img class="vet-service-img-fluid" src="https://i.ibb.co/PGpfDYb/grooming-puppy-30122019.jpg"
+                        alt="dog">
+                </div>
+                <div class="col-lg-5">
+                    <div class="row py-lg-5">
+                        <div class="col-lg-1">
+                            <h1 class="text-center py-lg-1">
+                                <i class="bi bi-calendar-check"></i>
+                            </h1>
+                        </div>
+                        <div class="col-lg-11">
+                            <h5 class="display-8">
+                                Schedule and book—all online
+                            </h5>
+                            <p>
+                                All you have to do is pick a day and time
+                            </p>
+                        </div>
+                        <div class="col-lg-1 py-lg-4">
+                            <h1 class="text-center py-lg-1">
+                                <i class="bi bi-box2-heart"></i>
+                            </h1>
+                        </div>
+                        <div class="col-lg-11 py-lg-4">
+                            <h5 class="display-8">
+                                Pet Groomer brings the equipment
+                            </h5>
+                            <p>
+                                Professional pet groomer comes to your doorstep
+                            </p>
+                        </div>
+                        <div class="col-lg-1">
+                            <h1 class="text-center py-lg-1">
+                                <i class="bi bi-house"></i>
+                            </h1>
+                        </div>
+                        <div class="col-lg-11">
+                            <h5 class="display-8">
+                                No travel stress for your pets
+                            </h5>
+                            <p>
+                                Grooming service happens in your home
+                            </p>
+                        </div>
+                        <div class="col-lg-1 py-lg-4">
+                            <h1 class="text-center py-lg-1">
+                                <i class="bi bi-chevron-right"></i>
+                            </h1>
+                        </div>
+                        <div class="col-lg-11 py-lg-4">
+                            <h5 class="display-8">
+                                Groomer cleans up
+                            </h5>
+                            <p>
+                                You're all set!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Youtube video -->
+        <section id="youtube-video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zb8ap_5T7RQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section id="grooming-prices" class="bg-light py-lg-1">
+            <h2 class="display-6 mt-lg-5 text-center fw-bold text-secondary">Dog Grooming Packages</h2>
+            <p class="text-center mt-lg-3">Charges may vary based on Pet and City.</p>
+            <div class="container-fluid">
+                <div class="row row-cols-2 row-cols-md-3 g-4 p-3 ms-5 me-5">
+                    <div class="col">
+                        <div class="card training-price-card ms-lg-3 me-lg-1 text-center">
+                            <div class="card-header bg-transparent">
+                                <div class="row">
+                                    <div class="col-lg-3 py-lg-2">
+                                        <img src="https://img.icons8.com/doodle/64/000000/bath.png" />
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h4 class="fw-bold text-start py-lg-3">Spa Bath</h4>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h6 class="fw-bold text-start text-danger text-decoration-line-through ps-4">
+                                            ₹960</h6>
+                                        <h3 class="pe-1 text-dark fw-bold">₹800</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-subtitle container text-start ps-3 ">
+                                    <dl>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Bath With Shampoo &
+                                            Conditioner
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Blow Dry
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Nail Clipping
+                                        </dd>
+                                        <dd> <i class="bi bi-caret-right-fill text-success"></i>Ear Cleaning
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Eyes Cleaning
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Paw Massage
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Combing/Brushing
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div class="card-footer bg-transparent">
+                                    <button type="button" class="btn btn-success w-100 py-lg-2">Book a Session</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card training-price-card ms-lg-3 me-lg-1 text-center">
+                            <div class="card-header bg-transparent">
+                                <div class="row">
+                                    <div class="col-lg-3 py-lg-2">
+                                        <img
+                                            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-bath-pet-grooming-flaticons-lineal-color-flat-icons-2.png" />
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h4 class="fw-bold text-start py-lg-3">Bath + Basic Grooming</h4>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h6 class="fw-bold text-start text-danger text-decoration-line-through ps-4">
+                                            ₹1438</h6>
+                                        <h3 class="pe-1 text-dark fw-bold">₹1199</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-subtitle container text-start ps-3 ">
+                                    <dl>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Bath With Shampoo &
+                                            Conditioner
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Blow Dry
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Face Haircutting
+                                        </dd>
+                                        <dd> <i class="bi bi-caret-right-fill text-success"></i>Sanitary Trim
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Nail Clipping
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Ear Cleaning
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Eye Cleaning
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Teeth Cleaning/Mouth
+                                            Spray
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Paw Massage
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Combing/Brushing
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div class="card-footer bg-transparent">
+                                    <button type="button" class="btn btn-success w-100 py-lg-2">Book a Session</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card training-price-card ms-lg-3 me-lg-1 text-center">
+                            <div class="card-header bg-transparent">
+                                <div class="row">
+                                    <div class="col-lg-3 py-lg-2">
+                                        <img src="https://img.icons8.com/bubbles/64/000000/dog.png" />
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h4 class="fw-bold text-start py-lg-3">Full Service</h4>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h6 class="fw-bold text-start text-danger text-decoration-line-through ps-4">
+                                            ₹1798</h6>
+                                        <h3 class="pe-1 text-dark fw-bold">₹1499</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-subtitle container text-start ps-3 ">
+                                    <dl>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Bath With Shampoo &
+                                            Conditioner
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Blow Dry
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Full body Trimming/Zero
+                                            Haircut
+                                        </dd>
+                                        <dd> <i class="bi bi-caret-right-fill text-success"></i>Sanitary Trim
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Nail Clipping
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Ear Cleaning
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Eye Cleaning
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Teeth Cleaning/Mouth
+                                            Spray
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Paw Massage
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Combing/Brushing
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div class="card-footer bg-transparent">
+                                    <button type="button" class="btn btn-success w-100 py-lg-2">Book a Session</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="display-6 mt-lg-5 text-center fw-bold text-secondary">Cat Grooming Packages</h2>
+            <p class="text-center mt-lg-3">Charges may vary based on Pet and City.</p>
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-2 g-5 p-5 ms-5 me-5">
+                    <div class="col">
+                        <div class="card training-price-card ms-lg-5 me-lg-5 text-center">
+                            <div class="card-header bg-transparent">
+                                <div class="row">
+                                    <div class="col-lg-3 py-lg-2">
+                                        <img
+                                            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-bath-pet-grooming-flaticons-lineal-color-flat-icons-2.png" />
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h4 class="fw-bold text-start py-lg-3">Bath + Basic Grooming</h4>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h6 class="fw-bold text-start text-danger text-decoration-line-through ps-4">
+                                            ₹1438</h6>
+                                        <h3 class="pe-1 text-dark fw-bold">₹1199</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-subtitle container text-start ps-3 ">
+                                    <dl>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Bath With Shampoo &
+                                            Conditioner
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Blow Dry
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Face Haircutting
+                                        </dd>
+                                        <dd> <i class="bi bi-caret-right-fill text-success"></i>Sanitary Trim
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Nail Clipping
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Ear Cleaning
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Eye Cleaning
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Teeth Cleaning/Mouth
+                                            Spray
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Paw Massage
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Combing/Brushing
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div class="card-footer bg-transparent">
+                                    <button type="button" class="btn btn-success w-100 py-lg-2">Book a Session</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card training-price-card ms-lg-5 me-lg-5 text-center">
+                            <div class="card-header bg-transparent">
+                                <div class="row">
+                                    <div class="col-lg-3 py-lg-2">
+                                        <img
+                                            src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-pet-pet-grooming-flaticons-lineal-color-flat-icons.png" />
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h4 class="fw-bold text-start py-lg-3">Full Service</h4>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h6 class="fw-bold text-start text-danger text-decoration-line-through ps-4">
+                                            ₹960</h6>
+                                        <h3 class="pe-1 text-dark fw-bold">₹800</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-subtitle container text-start ps-3 ">
+                                    <dl>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Bath With Shampoo &
+                                            Conditioner
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Blow Dry
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Body Massage
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Full body Trimming/Zero
+                                            Haircut
+                                        </dd>
+                                        <dd> <i class="bi bi-caret-right-fill text-success"></i>Sanitary Trim
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Nail Clipping
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Ear Cleaning
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Eye Cleaning
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Teeth Cleaning/Mouth
+                                            Spray
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Paw Massage
+                                        </dd>
+                                        <dd>
+                                            <i class="bi bi-caret-right-fill text-success"></i>Combing/Brushing
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div class="card-footer bg-transparent">
+                                    <button type="button" class="btn btn-success w-100 py-lg-2">Book a Session</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service Partners -->
+        <section id="service-partners bg-light">
+            <div class="p-3 mb-4 ">
+                <div class="service-partners-title">
+                    <h1 class="display-5 fw-bold">Meet a few of our Pet care Heroes</h1>
+                </div>
+                <div class="service-partners-card">
+                    <div class="card service-card" style="width: 18rem;">
+                        <img src="https://i.ibb.co/PZp5Hh3/vet.jpg" class="card-img-top" alt="vet">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Brian</h5>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <p class="card-text">20+ Reviews</p>
+                            <p class="search-label">Veterinarian, B.V.Sc & A.H</p>
+                            <p class="card-text card-padding">An Awesome experience for my cat's prolonged health issue!
+                                Thank you Dr.
+                                Brian for giving deep insight on the problem
+                            </p>
+                            <h3> <i class="bi bi-arrow-repeat"></i><span class="repeat">30+ repeat pet parents</span>
+                            </h3>
+                            <h3> <i class="bi bi-chat-left-text"></i><span class="repeat">11+ years of experience</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- ... -->
+                    <div class="card service-card" style="width: 18rem;">
+                        <img src="https://i.ibb.co/GkHD5Lb/groomer.jpg" class="card-img-top" alt="groomer">
+                        <div class="card-body">
+                            <h5 class="card-title">Franklin D'sa</h5>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <p class="card-text">50+ Reviews</p>
+                            <p class="search-label">Pet Groomer</p>
+                            <p class="card-text card-padding">I absolutely loved the way Franklin was with my lad, there
+                                wasn't even a
+                                hint
+                                of discomfort. They were really good at their jobs, friendly and professional. Clean
+                                job,
+                                and 10 on 10 I will again call you guys when I'll need. Thank you!</p>
+                            <h3> <i class="bi bi-arrow-repeat"></i><span class="repeat">80+ repeat pet parents</span>
+                            </h3>
+                            <h3> <i class="bi bi-chat-left-text"></i><span class="repeat">3+ years of experience</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- ... -->
+                    <div class="card service-card" style="width: 18rem;">
+                        <img src="https://i.ibb.co/0jyz7Ym/trainer.jpg" class="card-img-top" alt="trainer">
+                        <div class="card-body">
+                            <h5 class="card-title">Treddy Chen</h5>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <p class="card-text">40+ Reviews</p>
+                            <p class="search-label">Dog Trainer</p>
+                            <p class="card-text card-padding">Hi.... This was my first time and I am happy with the
+                                training
+                                service
+                                provided by Treddy... I have been previously dealing with other trainers from trainmydog
+                                and wasn't happy ... Thank you #Pawsforadoption
+                            </p>
+                            <h3> <i class="bi bi-arrow-repeat"></i><span class="repeat">60+ repeat pet parents
+                                </span>
+                            </h3>
+                            <h3> <i class="bi bi-chat-left-text"></i><span class="repeat">5+ years of experience</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Book Service -->
+        <section id="book-service">
+            <div class="service-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                    <path
+                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                    <path
+                        d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </div>
+            <div class="service-content">
+                <h3>Ready to book your next pet service?</h3>
+            </div>
+            <div>
+                <button type="button" class="btn service-submit-btn">Book a Service</button>
+            </div>
+            <div class="service-img-dog">
+                <img src="https://i.ibb.co/BsC26hy/dog-on-phone.png" alt="">
+            </div>
+        </section>
+        <div class="faq">
+            <p>
+                <a class="btn btn-light faq-btn btn-lg" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Book petcare service at home with ThePetNest
+                </a>
+
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <p>
+                        The endless and unconditional love from the furry companion deserves the best. Being adoring
+                        believers of the same, ThePetNest brought an idea to provide a safe, relaxed, and fun-filled
+                        experience for the little delightful creatures living in your hearts. Pets are the mini bundles
+                        of
+                        joy and celebrations. The days spent with pets are like celebrations. The pleasure they bring to
+                        our
+                        lives is immeasurable.
+                    </p>
+                    <p>
+                        They are worthy of more than just care, and ThePetNest is here to support you in enhancing the
+                        quality of life for these furry angels.
+                    </p>
+
+                    <p>
+                        From in-Home Pet Grooming, Pet Training to Vet on Call, we have all for your little furry
+                        friend.
+                        Because we understand—your pet is an important part of your family. When you are looking for
+                        competent pet grooming services, you can trust us to take care of your loved one. And when you
+                        require the Veterinary doctor or pet training, you can trust us to help you pamper your little
+                        one.
+                    </p>
+                    We have got your back. Every time!
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <div id="footer">
+            <div class="footer-main footer-main-override">
+                <h5 class="footer-title ">Paws Foundation</h5>
+                <ul>
+                    <li>About us</li>
+                    <li>Customer Review</li>
+                    <li>Online Pet Shop</li>
+                </ul>
+            </div>
+            <div class="footer-main">
+                <h5 class="footer-title">Home Service</h5>
+                <ul>
+                    <li>Pet Grooming</li>
+                    <li>Dog Training</li>
+                    <li>Vet on Call</li>
+                    <li>Adopt a Pet</li>
+                </ul>
+            </div>
+            <div class="footer-main">
+                <h5 class="footer-title">Partner</h5>
+                <ul>
+                    <li>Partner Reviews</li>
+                    <li>Testimonials</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-main">
+                <h5 class="footer-title">Contact</h5>
+                <a href="www.facebook.com"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg></a>
+                <a href="www.instagram.com"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg></a>
+                <a href="www.youtube.com"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                    </svg></a>
+            </div>
+        </div>
+        <div id="sub-footer">
+            <div class="left-footer">
+                &copy; Mumbai, INDIA
+            </div>
+            <div class="right-footer ">
+                <p class="text-end"> Paws Foundation © 2019-2022, All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -3,19 +3,20 @@ dotenv.config();
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-// const cors = require("cors");
+const cors = require("cors");
 let port = process.env.PORT || 3000;
 const mongoDB = require("mongodb");
 const mongoClient = mongoDB.MongoClient;
 const mongoUrl = process.env.MONGOURL;
+const morgan = require("morgan");
 let db;
 
-// app.use(morgan("common"));
+app.use(morgan("common"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 
-// app.use(cors());
+app.use(cors());
 
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
@@ -24,6 +25,46 @@ app.get("/", function (req, res) {
 
 app.get("/shopping", function (req, res) {
   res.sendFile(__dirname + "/shop.html");
+  // res.send("hello");
+});
+
+app.get("/vet", function (req, res) {
+  res.sendFile(__dirname + "/vet.html");
+  // res.send("hello");
+});
+
+app.get("/training", function (req, res) {
+  res.sendFile(__dirname + "/training.html");
+  // res.send("hello");
+});
+
+app.get("/adoption", function (req, res) {
+  res.sendFile(__dirname + "/adoption.html");
+  // res.send("hello");
+});
+
+app.get("/adopt-a-pet", function (req, res) {
+  res.sendFile(__dirname + "/adopt-a-pet.html");
+  // res.send("hello");
+});
+
+app.get("/adopt-details", function (req, res) {
+  res.sendFile(__dirname + "/adopt-details.html");
+  // res.send("hello");
+});
+
+app.get("/grooming", function (req, res) {
+  res.sendFile(__dirname + "/groomers.html");
+  // res.send("hello");
+});
+
+app.get("/shop-details", function (req, res) {
+  res.sendFile(__dirname + "/shop-details.html");
+  // res.send("hello");
+});
+
+app.get("/shop-listing", function (req, res) {
+  res.sendFile(__dirname + "/shop-listing.html");
   // res.send("hello");
 });
 

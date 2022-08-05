@@ -2,8 +2,6 @@
   height: 55rem;
   width: 100%;
   background-image: url("https://i.ibb.co/30vkgPd/pexels-tima-miroshnichenko-5390060.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
 }
 .vet-form {
   margin: 2% 55% 0 5%;
@@ -81,4 +79,17 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .vet-service-info-para {
   font-size: 2rem;
+}
+
+ol {
+  text-align: center;
+}
+#vet-service-rates {
+  padding-bottom: 2%;
+}
+.vet-container {
+  margin: auto 15% 5%;
+}
+.vet-prices {
+  width: 50%;
 }

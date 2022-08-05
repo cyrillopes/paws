@@ -1,0 +1,19 @@
+.margin {
+  margin-left: 1%;
+}
+.card > img {
+  margin: 20px;
+  height: 250px;
+}
+.adoption-card-img {
+  width: auto;
+}
+.offer-badge {
+  height: 25px;
+  width: 100px;
+  background-color: #ff0000;
+  margin: -16% auto auto 1%;
+}
+#sorting {
+  border-top: 1px solid rgb(202, 202, 202);
+}

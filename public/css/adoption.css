@@ -1,0 +1,16 @@
+.nav-bar {
+  height: 550px;
+  width: 100%;
+  background-image: url("https://i.ibb.co/DRJ68TX/cocker-spaniel-2785074-1920.jpg");
+}
+.testimony-img {
+  background-image: url("https://i.ibb.co/F4swkmT/couple-3687274-1920.jpg");
+  background-size: 100% 650px;
+}
+#adoption-journey {
+  margin-top: 200px;
+}
+
+.adoption-journey > img {
+  height: 600px;
+}

@@ -23,10 +23,12 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <!-- Styles CSS -->
-    <link rel="stylesheet" href="public/css/styles.css">
-    <link rel="stylesheet" href="public/css/vet.css">
-    <script defer src="public/js/api.js"></script>
-    <script defer src="public/js/locations.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vet.css">
+    <!-- <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="public/css/vet.css"> -->
+    <script defer src="js/api.js"></script>
+    <script defer src="js/locations.js"></script>
 
 </head>
 
@@ -38,8 +40,7 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
                     <div class="logo-container">
-                        <a class="navbar-brand navbar-heading" href="#index.html"><span
-                                class="material-symbols-outlined">
+                        <a class="navbar-brand navbar-heading" href="/"><span class="material-symbols-outlined">
                                 pets
                             </span> for adoption</a>
 
@@ -56,25 +57,23 @@
                         <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
                             style="--bs-scroll-height: 100px;">
                             <li class="nav-items nav-item">
-                                <a class="nav-link font-color" aria-current="page" href="#">Home</a>
+                                <a class="nav-link font-color" aria-current="page" href="/">Home</a>
                             </li>
                             <li class="nav-items nav-item">
-                                <a class="nav-link font-color" aria-current="page" href="#">Grooming</a>
+                                <a class="nav-link font-color" aria-current="page" href="/groomers">Grooming</a>
                             </li>
                             <li class="nav-items nav-item">
-                                <a class="nav-link font-color" aria-current="page" href="#">Training</a>
+                                <a class="nav-link font-color" aria-current="page" href="/training">Training</a>
                             </li>
                             <li class="nav-items nav-item">
-                                <a class="nav-link font-color" aria-current="page" href="#">Online Vet</a>
+                                <a class="nav-link font-color" aria-current="page" href="/vet">Online Vet</a>
                             </li>
                             <li class="nav-items nav-item">
-                                <a class="nav-link font-color" aria-current="page" href="#">Adoption</a>
+                                <a class="nav-link font-color" aria-current="page" href="/adoption">Adoption</a>
                             </li>
                             <li class="nav-items nav-item">
                                 <a class="nav-link font-color" aria-current="page" href="/shopping">Shop</a>
                             </li>
-
-
                         </ul>
                     </div>
                 </div>
@@ -177,7 +176,7 @@
     </header>
     <main>
         <section id="vet-service">
-            <h2 class="display-8 fw-bold text-center py-lg-5">How Online Veterinarian Service works?</h2>
+            <h2 class="display-6 fw-bold text-center py-lg-5">How Online Veterinarian Service works?</h2>
             <div class="row container-fluid py-lg-4">
                 <div class="col-lg-6">
                     <img class="vet-service-img-fluid" src="https://i.ibb.co/hM9FJj5/vet-examing-puppy-28032020.jpg"
@@ -308,6 +307,90 @@
         </section>
         <section id="vet-service-rates" class="bg-light">
             <h2 class="display-8 fw-bold text-center py-lg-5">Packages and Rates</h2>
+            <div class="vet-container">
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col-lg-6">
+                        <div class="card h-100  mb-4 rounded-3 shadow-sm vet-price-card">
+                            <div class="card-header py-3"><img
+                                    src="https://img.icons8.com/external-becris-lineal-color-becris/34/000000/external-pet-hotel-service-becris-lineal-color-becris.png" />
+                                <h4 class="my-0 fw-normal">Online Vet</h4>
+                            </div>
+                            <div class="card-body"><small class="text-muted fw-light">Starting</small>
+                                <h1 class="shop-navbar-heading">₹149</h1>
+                                <ul class="list-group mt-3 mb-4">
+                                    <li class="list-group-item">One time consultation</li>
+                                    <li class="list-group-item">Call & Video Consultancy</li>
+                                    <li class="list-group-item">Personalized Advice</li>
+
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg vet-price-btn">Book A Consultant</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card h-100 mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3"><img
+                                    src="https://img.icons8.com/external-flat-geotatah/34/000000/external-pet-pet-lover-society-flat-flat-geotatah-7.png" />
+                                <h4 class="my-0 fw-normal">Essential Care</h4>
+                            </div>
+                            <div class="card-body"><small class="text-muted fw-light">Starting</small>
+                                <h1 class="shop-navbar-heading">₹499</h1>
+                                <ul class="list-group mt-3 mb-4">
+                                    <li class="list-group-item">Call/Video Consultancy
+                                        220 minutes/month</li>
+                                    <li class="list-group-item">Chat Consults</li>
+                                    <li class="list-group-item">Personalized Advice</li>
+                                    <li class="list-group-item">1 month follow ups</li>
+                                    <li class="list-group-item">Ticks & Fleas Preventive</li>
+
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg vet-price-btn">Book A Consultant</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col-lg-6">
+                        <div class="card h-100 mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3"><img
+                                    src="https://img.icons8.com/external-becris-lineal-color-becris/34/000000/external-pet-hotel-service-becris-lineal-color-becris.png" />
+                                <h4 class="my-0 fw-normal">Dog Consultation</h4>
+                            </div>
+                            <div class="card-body"><small class="text-muted fw-light">Starting</small>
+                                <h1 class="shop-navbar-heading">₹599</h1>
+                                <ul class="list-group mt-3 mb-4">
+                                    <li class="list-group-item">Nutrition Consultation</li>
+                                    <li class="list-group-item">Dog Parenting Management</li>
+                                    <li class="list-group-item">Behavioral Training Tips
+                                        (Aggression, Biting, Jumping)
+                                    </li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg vet-price-btn">Book A Consultant</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card h-100 mb-4 rounded-3 shadow-sm">
+                            <div class="card-header py-3"><img
+                                    src="https://img.icons8.com/external-flat-geotatah/34/000000/external-pet-pet-lover-society-flat-flat-geotatah-7.png" />
+                                <h4 class="my-0 fw-normal">Cat Consultation</h4>
+                            </div>
+                            <div class="card-body"><small class="text-muted fw-light">Starting</small>
+                                <h1 class="shop-navbar-heading">₹499</h1>
+                                <ul class="list-group mt-3 mb-4">
+                                    <li class="list-group-item">Nutrition Consultation</li>
+                                    <li class="list-group-item">Cat Parenting Management</li>
+                                    <li class="list-group-item">Understanding Cat Signs/ Behaviour
+                                        (Bitting, Itching, Too Much Sleeping)
+                                    </li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg vet-price-btn">Book A Consultant</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
 
         </section>
         <section id="vet-service-reviews"></section>
@@ -348,54 +431,78 @@
             </div>
         </div>
         <div class="faq">
-            <div class="p-5 mb-4">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="true"
-                                aria-controls="flush-collapseOne">
-                                <h5>Book pet care service at home with ThePetNest</h5>
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <p class="card-text">✅ The endless and unconditional love from the furry companion
-                                    deserves
-                                    the best. Being adoring believers of the same, ThePetNest brought an idea to provide
-                                    a
-                                    safe,
-                                    relaxed, and fun-filled experience for the little delightful creatures living in
-                                    your
-                                    hearts. Pets are the mini bundles of joy and celebrations. The days spent with pets
-                                    are
-                                    like
-                                    celebrations. The pleasure they bring to our lives is immeasurable.</p>
+            <p>
+                <a class="btn btn-light faq-btn btn-lg" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    How does ThePetNest vet on phone work?
+                </a>
 
-                                <p class="card-text">✅ They are worthy of more than just care, and ThePetNest is here to
-                                    support you in
-                                    enhancing
-                                    the quality of life for these furry angels.</p>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <p>
+                        A video call works the same way as a Whatsapp Video or Facetime call. You will be guided step by
+                        step before starting the call, so that the vet will be able to see your pet and observe any
+                        behaviour or physical signs that will help them give the best guidance. If you opt for a chat
+                        consultation, it will work the same way as a WhatsApp or Messenger chat. Good for those times
+                        when you're at work.
+                    </p>
 
-                                <p class="card-text">✅ From in-Home Pet Grooming, Pet Training to Vet on Call, we have
-                                    all
-                                    for
-                                    your little
-                                    furry
-                                    friend. Because we understand—your pet is an important part of your family. When you
-                                    are
-                                    looking for competent pet grooming services, you can trust us to take care of your
-                                    loved
-                                    one. And when you require the Veterinary doctor or pet training, you can trust us to
-                                    help
-                                    you pamper your little one.
+                </div>
+            </div>
+            <p>
+                <a class="btn btn-light faq-btn btn-lg" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    How long does a pet consultation last?
+                </a>
 
-                                    We have got your back. Every time!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            </p>
+            <div class="collapse" id="collapseExample2">
+                <div class="card card-body">
+                    <p>
+                        Each Video consultations are estimated to last 20 minutes, but if we are unable to deliver the
+                        solution you need in that time the vet can extend.
+                    </p>
+
+                </div>
+            </div>
+            <p>
+                <a class="btn btn-light faq-btn btn-lg" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    When should I use a video/text consultation?
+                </a>
+
+            </p>
+            <div class="collapse" id="collapseExample3">
+                <div class="card card-body">
+                    <p>
+                        ThePetNest vet on call support can be used in any scenario where you are unsure about the health
+                        and well being of your pet. Don't take a chance with your pet's health by delaying the treatment
+                        or sift through thousands of Google search results on your own.
+                    </p>
+
+                </div>
+            </div>
+            <p>
+                <a class="btn btn-light faq-btn btn-lg" data-bs-toggle="collapse" href="#collapseExample4" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    What will happen after my pet consultation?
+                </a>
+
+            </p>
+            <div class="collapse" id="collapseExample4">
+                <div class="card card-body">
+                    <p>
+                        After your pet consultation is complete the following things will happen:
+                    </p>
+                    <ol>
+                        <li>Your vet will prescribe your pet’s medications and will provide his general advice
+                        </li>
+                        <li>You will be asked to rate the service of the vet.
+                        </li>
+                        <li>You will be followed up by our ThePetNest team to ensure your pet's good health.
+                        </li>
+                    </ol>
                 </div>
             </div>
         </div>

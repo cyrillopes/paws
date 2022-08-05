@@ -1,0 +1,16 @@
+.nav-bar {
+  height: 90px;
+  width: 100%;
+  background-image: none;
+  background-color: #faa466;
+}
+#adoption {
+  margin: 2% auto 4%;
+}
+.adoption-card-img {
+  height: 220px;
+  width: 100%;
+}
+.carousel-item > img {
+  height: 500px;
+}

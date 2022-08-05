@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>shopping</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <!-- Styles CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/shop.css">
     <script defer src="js/script.js"></script>
     <script defer src="js/modal.js"></script>
 
@@ -47,7 +48,7 @@
     <section id="nav-section">
         <nav class="navbar navbar-expand-md sticky-lg-top">
             <div class="container-fluid">
-                <a class="navbar-brand shop-navbar-heading navbar-heading" href="index.html"><span
+                <a class="navbar-brand shop-navbar-heading navbar-heading" href="/"><span
                         class="material-symbols-outlined shop-material-symbols-outlined">
                         pets
                     </span> for adoption</a>
@@ -87,111 +88,56 @@
     <main>
         <!-- Search section -->
         <section id="dropdowns">
-            <!-- Quick Search Dropdowns -->
             <div class="btn-group shop-dropdown">
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Home
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Home</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
+                <ul class="nav ps-lg-3">
+                    <li class="nav-item ps-lg-3 pe-lg-3">
+                        <a class="nav-link fw-bold dropdown text-decoration-none" aria-current="page" href="/">Home</a>
                     </li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    <li class="nav-item ps-lg-3">
+                        <a class="nav-link fw-bold dropdown" href="#">Natural Dog Food</a>
+                    </li>
+                    <li class="nav-item dropdown ps-lg-3 pe-lg-3">
+                        <a class="nav-link dropdown-toggle dropdown" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Customized Gifts</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ps-lg-3 pe-lg-3">
+                        <a class="nav-link fw-bold dropdown" aria-current="page" href="/">Pet Furniture</a>
+                    </li>
+                    <li class="nav-item dropdown ps-lg-3 pe-lg-3">
+                        <a class="nav-link dropdown-toggle dropdown" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Pet Accessories</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ps-lg-3 pe-lg-3">
+                        <a class="nav-link dropdown-toggle dropdown" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Pet Toys</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ps-lg-3">
+                        <a class="nav-link dropdown-toggle dropdown" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Pet Care Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/grooming">Pet Grooming</a></li>
+                            <li><a class="dropdown-item" href="/training">Pet Training</a></li>
+                            <li><a class="dropdown-item" href="/vet">Online Veterinary</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <!-- Quick Search Dropdowns -->
-            <div class="btn-group shop-dropdown">
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Natural Dog Food
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Natural Dog Food</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-            </div>
-            <!-- Quick Search Dropdowns -->
-            <div class="btn-group shop-dropdown">
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Customized Gifts
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Customized Gifts</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-            </div>
-            <!-- Quick Search Dropdowns -->
-            <div class="btn-group shop-dropdown">
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pet Furniture
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Pet Furniture</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-            </div>
-            <!-- Quick Search Dropdowns -->
-            <div class="btn-group shop-dropdown">
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pet Accessories
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Pet Accessories</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-            </div>
-            <!-- Quick Search Dropdowns -->
-            <div class="btn-group shop-dropdown">
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pet Toys
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Pet Toys</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-            </div>
-            <!-- Quick Search Dropdowns -->
-            <div class="btn-group shop-dropdown">
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pet Care Services
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Pet Care Services</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-            </div>
+
             <button type="button" class="btn btn-shopping-cart"><span class="material-symbols-outlined shopping-cart">
                     shopping_cart
                 </span></button>

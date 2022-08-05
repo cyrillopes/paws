@@ -1,0 +1,39 @@
+.details > img {
+  height: 600px;
+  width: 100%;
+}
+.details-sub-img > img {
+  height: 50px;
+  width: 50px;
+}
+.detail-heading,
+.details-price {
+  font-family: "Swiss 721 Rounded", cursive;
+}
+.badge {
+  background-color: #e70000;
+}
+.add-to-cart {
+  width: 100%;
+}
+.but-it-now {
+  width: 100%;
+  background-color: #ff7716;
+  color: #fff;
+}
+.but-it-now:hover {
+  background-color: #fc8835;
+  border: #fc8835;
+  color: #fff;
+}
+.details-genuine > img {
+  height: 80px;
+}
+.features-img > img {
+  height: 400px;
+  width: 400px;
+}
+.related-search > img {
+  width: 150px;
+  height: 150px;
+}
