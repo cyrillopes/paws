@@ -157,7 +157,7 @@ app.get("/breed", (req, res) => {
   let breedId = Number(req.query.breed_id);
   if (breedId) {
     query = {
-      breed_id: cat,
+      breed_id: breedId,
     };
   }
   db.collection("breed")
@@ -168,15 +168,47 @@ app.get("/breed", (req, res) => {
     });
 });
 
-app.get("/adoption/:breed_id", (req, res) => {
-  let breedId = Number(req.params.breed_id);
+// app.get("/adoption/:breed_id", (req, res) => {
+//   let breedId = Number(req.params.breed_id);
+//   db.collection("adoption")
+//     .find({ breed_id: breedId })
+//     .toArray((err, result) => {
+//       if (err) throw err;
+//       res.send(result);
+//     });
+// });
+
+//////////////////////////////////
+app.get("/adoptions", (req, res) => {
+  let query = {};
+  let breedId = Number(req.query.breed_id);
+  let vaccination = String(req.query.vaccination);
+  let age = String(req.query.age);
+
+  if (breedId && vaccination && age) {
+    query = {
+      breed_id: breedId,
+      vaccination: vaccination,
+      age: age,
+    };
+  } else if (breedId && vaccination) {
+    query = {
+      breed_id: breedId,
+      vaccination: vaccination,
+    };
+  } else if (breedId) {
+    query = {
+      breed_id: breedId,
+    };
+  }
   db.collection("adoption")
-    .find({ breed_id: breedId })
+    .find(query)
     .toArray((err, result) => {
       if (err) throw err;
       res.send(result);
     });
 });
+///////////////////////////////
 
 app.get("/pawItem", (req, res) => {
   let id = req.body.id;
