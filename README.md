@@ -132,7 +132,7 @@
 
 # List of animals for adoption
 
-# https://paws-for-adoption.herokuapp.com/adoption
+# [https://paws-for-adoption.herokuapp.com/adoption](http://localhost:3001/adoptions?breed_id=2&vaccination=Yes&age=Adolescence)
 
 # list of items
 
