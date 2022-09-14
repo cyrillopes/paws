@@ -188,11 +188,13 @@ app.get("/adoptions", (req, res) => {
       vaccination: vaccination,
       breed_id: breedId,
     };
-  } else if (vaccination) {
+  }
+  if (vaccination) {
     query = {
       vaccination: vaccination,
     };
-  } else if (breedId) {
+  }
+  if (breedId) {
     query = {
       breed_id: breedId,
     };
