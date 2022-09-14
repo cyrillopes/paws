@@ -183,22 +183,21 @@ app.get("/adoptions", (req, res) => {
   let query = {};
   let breedId = Number(req.query.breed_id);
   let vaccination = String(req.query.vaccination);
-  let age = String(req.query.age);
-  console.log(age);
-  if (age) {
+  if (vaccination && breedId) {
     query = {
-      age: age,
+      vaccination: vaccination,
+      breed_id: breedId,
     };
-  }
-  if (vaccination) {
+  } else if (vaccination) {
     query = {
       vaccination: vaccination,
     };
-  }
-  if (breedId) {
+  } else if (breedId) {
     query = {
       breed_id: breedId,
     };
+  } else {
+    query = {};
   }
 
   db.collection("adoption")
