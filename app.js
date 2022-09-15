@@ -76,15 +76,35 @@ app.get("/location", (req, res) => {
       res.send(result);
     });
 });
+// app.get("/locations/:state_id", (req, res) => {
+//   let stateId = Number(req.params.state_id);
+//   let districts = String(req.query.districts);
+//   let query = {};
+//   if (districts) {
+//     query = {
+//       districts: districts,
+//     };
+//   } else {
+//     query = {
+//       state_id: stateId,
+//     };
+//   }
+//   db.collection("location")
+//     .find(query)
+//     .toArray((err, result) => {
+//       if (err) throw err;
+//       res.send(result);
+//     });
+// });
 
-app.get("/category", (req, res) => {
-  db.collection("category")
-    .find()
-    .toArray((err, result) => {
-      if (err) throw err;
-      res.send(result);
-    });
-});
+// app.get("/category", (req, res) => {
+//   db.collection("category")
+//     .find()
+//     .toArray((err, result) => {
+//       if (err) throw err;
+//       res.send(result);
+//     });
+// });
 
 app.get("/quick-search/:category_id", (req, res) => {
   let categoryId = Number(req.params.category_id);
@@ -146,6 +166,17 @@ app.get("/details/:category_id/:id", (req, res) => {
   let id = Number(req.params.id);
   db.collection("shop")
     .find({ category_id: categoryId, id: id })
+    .toArray((err, result) => {
+      if (err) throw err;
+      res.send(result);
+    });
+});
+
+app.get("/adoption-details/:breed_id/:id", (req, res) => {
+  let breedId = Number(req.params.breed_id);
+  let id = Number(req.params.id);
+  db.collection("adoption")
+    .find({ breed_id: breedId, id: id })
     .toArray((err, result) => {
       if (err) throw err;
       res.send(result);
