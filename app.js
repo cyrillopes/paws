@@ -242,14 +242,16 @@ app.get("/adoptions", (req, res) => {
 });
 ///////////////////////////////
 
-app.get("/pawItem", (req, res) => {
+app.post("/pawItem", (req, res) => {
   let id = req.body.id;
+  // console.log(id);
   if (Array.isArray(id)) {
+    // console.log(id);
     db.collection("shop")
       .find({ id: { $in: id } })
       .toArray((err, result) => {
         if (err) throw err;
-        res.send("Invalid Input");
+        res.send(result);
       });
   }
 });

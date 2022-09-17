@@ -3,10 +3,11 @@
 }
 .card > img {
   margin: 20px;
-  height: 250px;
+  /* height: 250px; */
 }
 .adoption-card-img {
-  width: auto;
+  width: 65%;
+  height: 200px;
 }
 .offer-badge {
   height: 25px;
@@ -16,4 +17,15 @@
 }
 #sorting {
   border-top: 1px solid rgb(202, 202, 202);
+}
+.btn-shop {
+  background-color: #ff7716;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 35%;
+}
+.btn-shop:hover {
+  background-color: rgb(255, 131, 43);
+  color: #fff;
+  border: rgb(255, 131, 43);
 }
