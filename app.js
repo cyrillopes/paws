@@ -148,7 +148,7 @@ app.get("/shop/:category_id", (req, res) => {
       $and: [{ price: { $gt: lcost, $lt: hcost } }],
     };
   } else if (brand) {
-    query = { brand: brand };
+    query = { category_id: categoryId, brand: brand };
   } else {
     query = { category_id: categoryId };
   }
