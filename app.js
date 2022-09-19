@@ -277,11 +277,11 @@ app.post("/placeOrder", (req, res) => {
   });
 });
 
-app.patch("/updateOrder/:orderId", (req, res) => {
-  let orderId = Number(req.params.orderId);
+app.patch("/updateOrder/:id", (req, res) => {
+  let orderId = Number(req.params.id);
   db.collection("pawsOrders").updateOne(
     {
-      orderId: orderId,
+      id: orderId,
     },
     {
       $set: {
