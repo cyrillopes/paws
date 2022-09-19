@@ -277,7 +277,7 @@ app.post("/placeOrder", (req, res) => {
   });
 });
 
-app.patch("/updateOrder/:id", (req, res) => {
+app.patch("/pawsOrders/:id", (req, res) => {
   let orderId = Number(req.params.id);
   db.collection("pawsOrders").updateOne(
     {
